@@ -23,7 +23,7 @@ Create colorful pixel art by simply moving your mouse! Watch as colors shift and
 ## 🚀 Quick Start
 
 ### Option 1: Try it online
-**[🔗 Live Demo](https://your-username.github.io/etch-a-sketch/)**
+**[🔗 Live Demo](https://berserkxr.github.io/etch-a-sketch/)**
 
 ### Option 2: Run locally
 ```bash
@@ -168,6 +168,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Made with ❤️ and JavaScript**
 
-[⭐ Star this repo](https://github.com/your-username/etch-a-sketch) if you found it helpful!
+[⭐ Star this repo](https://github.com/berserkxr/etch-a-sketch) if you found it helpful!
 
 </div>
