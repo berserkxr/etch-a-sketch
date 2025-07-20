@@ -4,8 +4,6 @@
 
 Create colorful pixel art by simply moving your mouse! Watch as colors shift and intensify with each pass, creating beautiful gradients and vibrant artwork.
 
-![Etch-A-Sketch Demo](https://via.placeholder.com/600x400/f0f0f0/333333?text=Etch-A-Sketch+Demo)
-
 ---
 
 ## ✨ Features
