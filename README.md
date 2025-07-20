@@ -21,7 +21,7 @@ A browser-based sketch pad inspired by the classic Etch-A-Sketch toy. Built with
 ## 🔗 Live Demo
 
 [Click here to try it out!](https://your-demo-link.com)  
-*(Replace with your GitHub Pages or Netlify link)*
+
 
 ---
 
@@ -90,5 +90,3 @@ Project inspired by the "Etch-A-Sketch" lesson from The Odin Project
 vbnet
 Copy
 Edit
-
-Let me know if you want a version with contribution guidelines, screenshot placeholders,

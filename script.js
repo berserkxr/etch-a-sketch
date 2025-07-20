@@ -1,5 +1,18 @@
 let currentGridSize = 16;
 
+const colors = [
+    '#FF6B6B', 
+    '#4ECDC4', 
+    '#45B7D1', 
+    '#96CEB4', 
+    '#FFEAA7', 
+    '#DDA0DD', 
+    '#98D8C8', 
+    '#F7DC6F', 
+    '#BB8FCE', 
+    '#85C1E9'  
+];
+
 function createGrid(size) {
     console.log(`Creating ${size} x ${size} grid`);
 
@@ -7,17 +20,31 @@ function createGrid(size) {
     
     container.innerHTML = '';
 
-    const squareSize = 960 / size;
+    const squarePercentage = 100 / size;
+    const squareHeight = 960 / size;
 
     for(let i = 0; i < size * size; i++) {
         const square = document.createElement('div');
         square.classList.add('grid-square');
 
-        square.style.width = `${squareSize}px`
-        square.style.height = `${squareSize}px`
+        square.style.width = `${squarePercentage}%`
+        square.style.height = `${squareHeight}px`
+
+        square.dataset.hoverCount = '0';
 
         square.addEventListener('mouseenter', function() {
-            this.classList.add('hovered');
+            let hoverCount = parseInt(this.dataset.hoverCount);
+            hoverCount++;
+            this.dataset.hoverCount = hoverCount;
+
+            const colorIndex = (hoverCount - 1) % colors.length;
+            const color = colors[colorIndex];
+
+            const opacity = Math.min(0.2 + (hoverCount - 1) * 0.1, 1.0);
+            this.style.backgroundColor = color;
+            this.style.opacity = opacity;
+
+            console.log(`Square hovered ${hoverCount} times, color: ${color}, opacity: ${opacity}`);
         });
 
         container.appendChild(square);
